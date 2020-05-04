@@ -1,23 +1,24 @@
 <template>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link"><router-link to="/">Home</router-link></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+    <ul class="nav justify-content-center navbar-dark bg-dark">
+        <li class="nav-item">
+            <router-link class="nav-link" to="/">Home</router-link>
+        </li>
+        <li class="nav-item">
+            <router-link class="nav-link" to="/user">User</router-link>
+        </li>
+    </ul>
 
 </template>
+
+<style scoped>
+.nav {
+    margin-bottom: 30px;
+}
+.nav-link {
+    color: rgb(158, 158, 158)
+}
+.nav-link:hover {
+    color: white
+}
+</style>
