@@ -8,7 +8,10 @@ export const routes = [
     { path: '', component: Home },
     { path: '/user', component: User, children: [
         { path: '', component: UserStart },
-        { path: ':id', component: UserDetail },
+        { path: ':id', component: UserDetail, beforeEnter: (to, from, next) => {
+            console.log('user detail routes');
+            next()
+        } },
         { path: ':id/edit', component: UserEdit, name: 'userEdit' }
     ] },
     { path: '*', redirect: '/' }
