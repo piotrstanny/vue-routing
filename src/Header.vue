@@ -5,10 +5,7 @@
             <router-link class="nav-link" to="/"><a>Home</a></router-link>
         </li>
         <li class="nav-item">
-            <router-link class="nav-link" to="/user/10"><a>User</a></router-link>
-        </li>
-        <li class="nav-item">
-            <router-link class="nav-link" to="/user/20"><a>User</a></router-link>
+            <router-link class="nav-link" to="/user"><a>User</a></router-link>
         </li>
     </ul>
 
