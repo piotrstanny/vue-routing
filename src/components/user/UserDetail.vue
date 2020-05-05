@@ -8,19 +8,13 @@
 
 <script>
 export default {
-    data() {
-        return {
-            permission: true
-        }
-    },
+    
     beforeRouteEnter(to, from, next) {
-        if (true) {
             console.log('Access allowed');
             next()
-        } else {
-            console.log('Access denied');
-            next(false)
-        }
+            // console.log('Access denied');
+            // next(false)
+        
     }
 }
 </script>
